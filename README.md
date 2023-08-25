@@ -1,24 +1,26 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Story 1: In order to track wildlife sightings, as a user of the API, I need to manage animals.
 
-Things you may want to cover:
+Branch: animal-crud-actions ✅
 
-* Ruby version
+Acceptance Criteria
 
-* System dependencies
+Create a resource for animal with the following information: common name and scientific binomial ✅
 
-* Configuration
+in console i see this:
+3.2.0 :001 > Animal.all
+  Animal Load (0.8ms)  SELECT "animals".* FROM "animals"
+ => [] ✅
+ Animal common_name:string scientific_binomial:string
 
-* Database creation
 
-* Database initialization
+Can see the data response of all the animals ✅
 
-* How to run the test suite
+Can create a new animal in the database ✅
 
-* Services (job queues, cache servers, search engines, etc.)
+Can update an existing animal in the database ✅
 
-* Deployment instructions
+Can remove an animal entry in the database ✅
 
-* ...
+
+Animal.create(common_name:" ", scientific_binomial:" ")
