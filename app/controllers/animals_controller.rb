@@ -13,6 +13,7 @@ class AnimalsController < ApplicationController
     def create
         animal = Animal.create(animal_params)
         if animal.valid?
+            render json: animal 
         else
             render json: animal.errors
         end
